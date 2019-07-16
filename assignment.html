@@ -6,13 +6,6 @@
     <link rel="stylesheet" href="assgn.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="assgn.js"></script>
-    <script>
-    	var qs = new Querystring();
-    	var name = qs.get("name");
-    	var perc = qs.get("perc");
-
-    	
-    </script>
   </head>
   <body class="appBackground">
     <div class="container">
@@ -35,8 +28,7 @@
     	<div class="row" style="padding-top: 5%;">
     		<div class ="col-md-4">
     			References:
-    			<div class="row">
-    				<div style="padding-left: 10px;">
+    				<div id="links">
     					<a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
 	    					Link 1</a><br>
 	    				<a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
@@ -46,9 +38,8 @@
 	    				<a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
 	    					Link 4</a><br>
     				</div>
-    			</div>
-    			<div class="row">
-    				<input type="button" value="+" onclick="addRef()">
+    			<div class="row" style="padding-left: 15px; padding-top: 10px;">
+    				<button onclick="addRef()">+</button>
     			</div>
     			
     		</div>
@@ -58,12 +49,17 @@
 	    		</div>
 	    		<div class="tsk">
 	    			Tasks:
-	    			<p>
-	    				<input type="checkbox"> Create document<br>
-	    				<input type="checkbox"> Research things<br>
-	    				<input type="checkbox"> Question reality<br>
-	    			</p>
+	    			<br>
+	    			<input type="checkbox"> Create document<br>
+	    			<input type="checkbox"> Research things<br>
+	   				<input type="checkbox"> Question reality<br>
+	    			
+	    			
 	    		</div>
+	    		<div style="background-color: #c8c8c8">
+	    			<button onclick="addTsk()">+</button>
+	    		</div>
+	    		
 	    	</div>
     	</div>
     </div>
