@@ -1,4 +1,5 @@
 var linknum = 5;
+var id=1;
 function addRef(){
 
 	var a = document.createElement('a');
@@ -10,7 +11,8 @@ function addRef(){
 		return;
 	}
 	a.href = ref;
-	a.target = "_blank";                            
+	a.target = "_blank";   
+	a.style="color: #961028;";                         
 	document.getElementById("links").appendChild(a);
 	linknum++;
 
@@ -21,13 +23,19 @@ function addTsk(){
 
 	var a = document.createElement('input');
 	var tsk = prompt("What's your next task?");
-	var linkText = document.createTextNode(tsk);
-	a.appendChild(linkText);
 	if(tsk==null){
 		return;
 	}  
-	a.type="checkbox";                        
+	a.type="checkbox";
+	a.id=id;
+	id++;
+	
+	var label = document.createElement('label'); 
+	label.htmlFor = id; 
+	label.appendChild(document.createTextNode(tsk));
+
 	document.getElementById("tsk").appendChild(a);
+	document.getElementById("tsk").appendChild(label);
 
 	var b = document.createElement('br');                        
 	document.getElementById("tsk").appendChild(b);  

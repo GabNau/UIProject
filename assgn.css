@@ -1,33 +1,18 @@
-body{
-	background-color: #eeeeee;
-	
-}
 
 .container{
 
 	width: 50%;
 	height: 100%;
   
-  	background-color: #f5f5f5;
+  	background-color: #9a938c;
+  	color: #f5f5f5;
 
-}
-.main {
-  
-  	background-color: #f5f5f5;
-
-  	position:absolute;
-    left:10%;
-    top:10%;
-    width:80%;
-    height:80%;
-
-    margin-left:-10px;
-    margin-top:-10px;
 }
 
 .ref{
 	float: left;
-	background-color: #c8c8c8;
+	background-color: ##9a938c;
+	color: #f5f5f5;
 	width: 40%;
 	padding-left: 10px;
 	padding-bottom: 10%;
@@ -44,9 +29,10 @@ body{
 }
 
 .tsk{
+	color: #f5f5f5;
 	margin-top: 5%;
 	padding: 10px;
-	background-color: #c8c8c8;
+	background-color: #8c837c;
 	height: auto;
 
 }
