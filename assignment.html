@@ -6,36 +6,55 @@
     <link rel="stylesheet" href="assgn.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="assgn.js"></script>
+    <script>
+    	var qs = new Querystring();
+    	var name = qs.get("name");
+    	var perc = qs.get("perc");
+
+    	
+    </script>
   </head>
-  <body>
-    <div class="main">
-    	<div>
-    		<div style="display: inline-block;">
-    			<h4>[Assignment name here] 30% done</h4><br>
-    		</div>
-    		<div style="float: right;">
-    			<h4 style="text-align: right;">Due in: [insert days] <br> Due Date: [enter here]</h4>
-    		</div>
-    	</div>
-    	<div class="big">
-    		<div class ="ref">
+  <body class="appBackground">
+    <div class="container">
+	    <div class="row" style="background-color: #ffffff; padding-top: 10px;">
+	    	<div class="col-md-4"></div>
+	    	<div class="col-md-4">
+	    		<h4 style="text-align: center;">[Class name here]</h4>
+	    	</div>
+	    	<div class="col-md-4"></div>
+	    </div>
+	    <div class="row">
+	   		<div class="col-md-8">
+	   			<h4 id="name">[Assignment name here] [x]%</h4>
+	   		</div>
+    		<div class="col-md-4">
+	    		<h4 style="text-align: right;">Due in: [insert days] <br> Due Date: [enter here]</h4>
+	   		</div>
+	   	</div>
+
+    	<div class="row" style="padding-top: 5%;">
+    		<div class ="col-md-4">
     			References:
-    			<div id="links">
-    				<span>&#183;</span> <a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
-    					Link 1</a><br>
-    				<span>&#183;</span> <a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
-    					Link 2</a><br>
-    				<span>&#183;</span> <a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
-    					Link 3</a><br>
-    				<span>&#183;</span> <a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
-    					Link 4</a><br>
-    				<button onclick="addRef()" style="padding-left: 15px; padding-right: 15px;">+</button>
+    			<div class="row">
+    				<div style="padding-left: 10px;">
+    					<a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+	    					Link 1</a><br>
+	    				<a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+	    					Link 2</a><br>
+	    				<a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+	    					Link 3</a><br>
+	    				<a href="https://www.google.com/search?q=html+text+align&oq=ghtml+text+a&aqs=chrome.1.69i57j0l5.3758j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+	    					Link 4</a><br>
+    				</div>
     			</div>
+    			<div class="row">
+    				<input type="button" value="+" onclick="addRef()">
+    			</div>
+    			
     		</div>
-    		<div class="a2">
+    		<div class="col-md-8">
 	    		<div class="wrk">
-	    			Working in<br>
-	    			[link]
+	    			Working in [link]
 	    		</div>
 	    		<div class="tsk">
 	    			Tasks:
