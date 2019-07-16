@@ -15,6 +15,22 @@
           * {box-sizing: border-box}
             body {font-family: "Lato", sans-serif;}
 
+
+
+                a:link, a:visited {
+                  background-color: #9a938c;
+                  color: white;
+                  padding: 14px 25px;
+                  text-align: left;
+                  text-decoration: none;
+                  display: inline-block;
+                  width: 100%;
+                }
+
+                a:hover, a:active {
+                  background-color: #8c837c;
+                }
+
                 /* Style the tab */
                 .tab {
                   float: left;
@@ -72,6 +88,34 @@
                   
 
                 }
+
+
+                .square {
+                  height: 200px;
+                  width: 200px;
+                  background-color: #9a938c;
+                  padding: 10px 10px;
+                  color: #f5f5f5;
+
+
+                }
+
+                .add {
+                   text-align: center;
+                   font-size: 40px;
+
+                }
+
+                .plus:hover{
+
+                  background-color: #961028;
+
+                }
+
+                .plus {
+                  background-color: #96102B;
+                }
+
         
         </style>
     </head>
@@ -83,25 +127,29 @@
 
             <div class="tab">
               <button class="tablinks" onclick="openCity(event, 'SEG3125')" id="defaultOpen">SEG3125</button>
-              <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-              <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')">ITI1100</button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')">MAT3126</button>
+              <button class="tablinks" onclick="openCity(event, 'Moscow')">Add a class+</button>
             </div>
 
             <div id="SEG3125" class="tabcontent">
                 <div class="row" style="height: 749px">
-                    <div class="col-md-4">
-                      <div class=" row "> </div>
-                      <div class=" row "> </div>
+                    <div class="col-md-4" style="margin-left: 0px">
+                      <div class=" row square" style="margin: 10px;"><a href="assignment.html" style="padding: 20px"> Assignment 1 <br> Due date: 01 01 2020 <br>Completed: 0%</a></div>
+                      <div class=" row square" style="margin: 10px;"><a href="assignment.html" style="padding: 20px;"> Assignment 3 <br> Due date: 02 02 2020 <br>Completed: 5%</a> </div>
                     </div>
                     <div class="col-md-4">
-                      <div class=" row "> </div>
-                      <div class=" row "> </div>
+                      <div class=" row square" style="margin: 10px;"><a href="assignment.html" style="padding: 20px;"> Assignment 2 <br> Due date: 01 02 2020 <br>Completed: 7%</a></div>
+                      <div class=" row square"  style="margin: 10px; justify-content: center; font-size: 100px; background-color: #961028;"><a href="assignment.html" class="plus"style="padding: 20px; margin: -10px; background-color: #96102B; float: center; text-align: center;"> +</a>
+                      </div>
                     </div>
                     <div class ="col-md-4" style="background-color: #9a938c; color: #f5f5f5; width: 30%; padding: 22px 16px;">
                       <p class="todo">Quick selector: </p>
-                      <p class="todo">1. Baller</p>
-                      <p class="todo">2. Baller</p>
-                    
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">1. Assignment 1</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">2. Assignment 2</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">3. Assignment 3</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">4. Assignment 4</a> </div>
+                      
                     </div>
                   </div>
                   
@@ -109,14 +157,74 @@
             </div>
 
             <div id="Paris" class="tabcontent">
-              <h3>Paris</h3>
-              <p>Paris is the capital of France.</p> 
+                 <div class="row" style="height: 749px">
+                    <div class="col-md-4" style="margin-left: 0px">
+                    <div class=" row square" style="margin: 10px;"><a href="assignment.html" style="padding: 20px;"> Assignment 4 <br> Due date: 02 06 2021 <br>Completed: 9%</a></div>
+                      <div class=" row ">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class=" row square"  style="margin: 10px; justify-content: center; font-size: 100px; background-color: #961028;"><a href="assignment.html" class="plus"style="padding: 20px; margin: -10px; background-color: #96102B; float: center; text-align: center;"> +</a>
+                      </div>
+                      <div class=" row ">
+                      </div>
+                    </div>
+                    <div class ="col-md-4" style="background-color: #9a938c; color: #f5f5f5; width: 30%; padding: 22px 16px;">
+                      <p class="todo">Quick selector: </p>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">1. Assignment 1</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">2. Assignment 2</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">3. Assignment 3</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">4. Assignment 4</a> </div>
+                      
+                    </div>
+                  </div>
             </div>
 
             <div id="Tokyo" class="tabcontent">
-              <h3>Tokyo</h3>
-              <p>Tokyo is the capital of Japan.</p>
+                 <div class="row" style="height: 749px">
+                    <div class="col-md-4" style="margin-left: 0px">
+                      <div class=" row square"  style="margin: 10px; justify-content: center; font-size: 100px; background-color: #961028;"><a href="assignment.html" class="plus"style="padding: 20px; margin: -10px; background-color: #96102B; float: center; text-align: center;"> +</a>
+                      </div>
+                      <div class=" row "> </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class=" row " ></div>
+                      <div class=" row " >
+                      </div>
+                    </div>
+                    <div class ="col-md-4" style="background-color: #9a938c; color: #f5f5f5; width: 30%; padding: 22px 16px;">
+                      <p class="todo">Quick selector: </p>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">1. Assignment 1</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">2. Assignment 2</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">3. Assignment 3</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html" class= "todo"href="default.asp" target="_blank">4. Assignment 4</a> </div>
+                      
+                    </div>
+                  </div>
             </div>
+             <div id="Moscow" class="tabcontent">
+              <div class="row" style="height: 749px">
+                    <div class="col-md-4" style="margin-left: 0px">
+                      <div class=" row square" style="margin: 10px; justify-content: center; font-size: 100px;background-color: #961028; "> <a class="plus"style="padding: 20px; margin: -10px;">+ </a>
+                      </div>
+                      <div class=" row "> </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class=" row " ></div>
+                      <div class=" row " >
+                      </div>
+                    </div>
+                    <div class ="col-md-4" style="background-color: #9a938c; color: #f5f5f5; width: 30%; padding: 22px 16px;">
+                      <p class="todo">Quick selector: </p>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html class= "todo"href="default.asp" target="_blank">1. Assignment 1</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html class= "todo"href="default.asp" target="_blank">2. Assignment 2</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html class= "todo"href="default.asp" target="_blank">3. Assignment 3</a> </div>
+                      <div class=" row " style="padding: 12px 0px"><a href="assignment.html class= "todo"href="default.asp" target="_blank">4. Assignment 4</a> </div>
+                      
+                    </div>
+                  </div>
+
+             </div>
 
             <script>
             function openCity(evt, cityName) {
