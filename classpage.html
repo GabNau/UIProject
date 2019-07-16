@@ -129,7 +129,7 @@
               <button class="tablinks" onclick="openCity(event, 'SEG3125')" id="defaultOpen">SEG3125</button>
               <button class="tablinks" onclick="openCity(event, 'Paris')">ITI1100</button>
               <button class="tablinks" onclick="openCity(event, 'Tokyo')">MAT3126</button>
-              <button class="tablinks" onclick="openCity(event, 'Moscow')">Add a class+</button>
+              <button class="tablinks" onclick="addClass()">Add a class+</button>
             </div>
 
             <div id="SEG3125" class="tabcontent">
@@ -244,7 +244,12 @@
 
             // Get the element with id="defaultOpen" and click on it
             document.getElementById("defaultOpen").click();
+                
+            function addClass(){
+                prompt("Name your class: ");
+            }
             </script>
+          
    
         
         </div>
